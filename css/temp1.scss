@@ -1,0 +1,140 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+font-family: 'Poppins', sans-serif;
+}
+.header{
+    img {
+        width: 70px;
+    }
+    padding: 1.5% 7%;
+}
+.section-1{
+    background-image: url("../images/landing.jpg");
+    background-repeat: no-repeat;
+    background-size:cover ;
+    min-height: 90vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+
+    h1{
+        color: aqua;
+        font-size: 60px;
+        text-transform: capitalize;
+    }
+    P{
+        font-size: 20px;
+        line-height: 1.8em;
+    }
+}
+.section-2{
+    padding: 3% 10%;
+    .cards{
+        display:flex;
+        gap: 10px;
+        .card{ 
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 15px;
+            .icon{
+                font-size: 40px;
+                color: aquamarine;
+            }
+            .title{
+                font-size: 22px;
+                font-weight: bold;
+                margin-bottom: 4%;
+            }
+            p{
+                font-size: 17px;
+                    color: #605f5f;
+                    line-height: 1.5em;
+            }
+        }
+    }
+}
+.section-3{
+    .title{
+        opacity: .1;
+        font-size: 75px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .subtitle{
+        text-align: center;
+        font-size: 20px;
+        text-transform: capitalize;
+        position: relative;
+        top: -35px;
+    }
+    .sides{
+        display: flex;
+        padding: 5% 10%;
+        gap: 15px;
+        .side {
+            &:nth-child(1){
+                padding: 10px;
+                .cards {
+                    display: flex;
+                    gap: 10px;
+                    .group {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 25px;
+                    }
+                    .card{
+                        display: flex;
+                        gap: 10px;
+                        padding: 7px;
+                        // width: 50%;
+                        .icon{
+                            font-size: 30px;
+                            color: aquamarine;
+                        }
+                        .info{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                            .head{
+                                font-size: 20px;
+                                font-weight: bold;
+                            }
+                            .desc{
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+            &:nth-child(2){
+                .image {
+                    position: relative;
+                    img {
+                        max-width: 250px;    
+                        margin-right: 3%;   
+                    }
+                    &::before{
+                        content: "";
+                        background-color: #2c4755;
+                        width: 100px;
+                        height: calc(100% + 100px);
+                        top: -50px;
+                        position: absolute;
+                        right: 0;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+    }
+}
